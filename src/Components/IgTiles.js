@@ -36,38 +36,28 @@ class IgTiles extends Component {
         this.setState({ slideCount: this.state.slideCount - 1})
     }
     render() {
-        const BackArrow = (props) => (
-            <div onClick={props.previousImage} style={{fontSize: '2em', marginRight: '12px'}}>
-            <i className="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-            </div>
-        )
-        
-        const NextArrow = (props) => (
-            <div onClick={props.nextImage} style={{fontSize: '2em', marginLeft: '12px'}}>
-                <i className="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-            </div>
-        )
         return (
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '30px'}}>
+            <div style={mainStyle}>
                 {console.log(this.state.photos)}
-                {this.state.slideCount !== 0 ? <BackArrow previousImage={this.previousImage}/> : ''}
                 {this.state.photos.map((photo, key) => {
-                    if (this.state.photos.indexOf(photo) === this.state.slideCount) {
                     return (
-                        <div key={photo.id} style={{margin: '0 auto'}}>
-                            <img src={photo.images.standard_resolution.url} alt={photo.caption} style={{width: '500px', height: '500px'}}/>
-                            <div style={{width: '600px', margin: '24px auto', fontStyle: 'italic'}}>
-                                {photo.caption !== null ? photo.caption.text : ''}
-                            </div>
+                        <div key={photo.id} style={{margin: '0 auto'}} className='grid-item'>
+                            <img src={photo.images.standard_resolution.url} alt={photo.caption} style={{width: '350px', height: '200px'}}/>
                         </div>
                     )
-                    }
-                    return ''
                 })}
-                {this.state.slideCount !== (this.state.photos.length -1) ? <NextArrow nextImage={this.nextImage}/> : ''}
             </div>
         )
     }
+}
+
+const mainStyle = {
+    display: 'inline-grid', 
+    gridTemplateColumns: '350px 350px 350px 350px 350px',
+    gridTemplateRows: 'repeat(200px)', 
+    marginTop: '30px', 
+    zIndex: '0', 
+    position: 'relative'
 }
 
 export default IgTiles;

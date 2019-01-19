@@ -6,8 +6,7 @@ class NavBar extends Component {
         super(props);
         this.state = {
             scrollingLock: false,
-            height: window.innerHeight - 360,
-            showPhantom: false
+            height: window.innerHeight - 1215,
         };
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -25,21 +24,19 @@ class NavBar extends Component {
     }
 
     updateDimensions() {
-        this.setState({height: window.innerHeight - 355})
+        this.setState({height: window.innerHeight - 1200})
         console.log(this.state.height)
     }
     handleScroll() {
-        if (window.scrollY > this.state.height + 280) {
+        if (window.scrollY > window.innerHeight + 1550) {
             this.setState({
                 scrollingLock: true,
-                showPhantom: true
             });
             
         } 
         else if (window.scrollY < window.innerHeight) {
             this.setState({
                 scrollingLock: false,
-                showPhantom: false
             });
         }
     }
@@ -83,4 +80,5 @@ const leftLi = {
 const rightLi = {
     float: 'right'
 }
+
 export default NavBar;
