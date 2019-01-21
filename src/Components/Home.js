@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import '../Components/IgTiles'
 import linkedin from '../Icons/linkedIn.png';
 import github from '../Icons/github.png';
 import instagram from '../Icons/instagram.png';
 import '../CSS/Home.css'
-import IgTiles from '../Components/IgTiles';
+import headshot from '../Photos/HeadShot.jpg'
 
 class Home extends Component {
     render() {
         return (
-            <div id='home'> 
-                <IgTiles/>
+            <div id='home'>
+                <h1>Justin Pauga</h1>
+                <img src={headshot} alt='headshot' style={{borderRadius: '50%', height: '500px', width: '375px'}}/>
                 <h2>Software Engineer</h2>
-                <h1>}>Justin Pauga</h1>
                 <span>
                 <ul style={{position: 'relative', top: '50%', left: '45%'}}>
                     <li style={{liStyle}}><a href='https://www.linkedin.com/in/justin-pauga/'><img src={linkedin} alt='LinkedIn' /></a></li>
@@ -25,12 +24,10 @@ class Home extends Component {
     }
 }
 
-const imgStyle = {
-    height: '40px',
-    width: '40px'
+const liStyle = {
+    float: 'left',
+    height: '60px',
+    width: '60px'
 }
 
-const liStyle = {
-    float: 'left'
-}
 export default Home;

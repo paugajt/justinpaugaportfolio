@@ -6,7 +6,7 @@ class NavBar extends Component {
         super(props);
         this.state = {
             scrollingLock: false,
-            height: window.innerHeight - 1215,
+            height: window.innerHeight - 900,
         };
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -24,11 +24,11 @@ class NavBar extends Component {
     }
 
     updateDimensions() {
-        this.setState({height: window.innerHeight - 1200})
+        this.setState({height: window.innerHeight - 900})
         console.log(this.state.height)
     }
     handleScroll() {
-        if (window.scrollY > window.innerHeight + 1550) {
+        if (window.scrollY > window.innerHeight + 900) {
             this.setState({
                 scrollingLock: true,
             });
@@ -42,7 +42,7 @@ class NavBar extends Component {
     }
     render() {
         return (
-            <div className='navbar' style={{zIndex: '5', width: '100%', position: this.state.scrollingLock ? 'fixed' : 'relative', top: this.state.scrollingLock ? '0' : this.state.height}}>
+            <div className='navbar' style={{width: '100%', position: this.state.scrollingLock ? 'fixed' : 'relative', top: this.state.scrollingLock ? '0' : this.state.height}}>
                 <ul style={ulStyle}>
                     <li style={leftLi}><a href='#home' style={linkStyle}>Home</a></li>
                     <li style={leftLi}><a href='#projects' style={linkStyle}>Projects</a></li>

@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
        <Home />
-        <NavBar />
+      <NavBar />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacus sapien, rutrum a magna ut, aliquam porta nisi. Integer eget nulla volutpat, aliquam lacus in, congue risus. Suspendisse est nunc, rutrum non quam et, maximus pharetra odio. Curabitur volutpat augue id posuere auctor. Vestibulum bibendum diam non tincidunt pellentesque. Cras nisl justo, dignissim sed enim id, lacinia rutrum sapien. Quisque finibus tortor massa, dapibus vestibulum risus iaculis vitae. Vestibulum tincidunt posuere nisl ac molestie. Maecenas interdum imperdiet mauris. Etiam suscipit purus risus. Sed sodales lacus purus, et blandit lectus euismod quis. Aenean sodales dolor et quam maximus, placerat commodo erat finibus. Morbi tempus felis sem, ac lobortis eros commodo mollis. Nulla sit amet mauris ultricies, tincidunt est a, ultrices lorem. Aenean sit amet lacus massa. Phasellus semper mauris id lorem euismod, eu rutrum mauris hendrerit.
 
 Donec ultricies tempor nibh in rutrum. Cras ex libero, porta a gravida quis, aliquam vitae metus. Pellentesque vitae diam id magna luctus lacinia vel a mi. Duis a tortor vitae velit suscipit luctus. Duis porta commodo felis, eu pulvinar justo. Curabitur non urna id urna feugiat eleifend. Etiam eget enim leo. Fusce quis est sed quam faucibus convallis. Nunc pellentesque, orci posuere fringilla elementum, erat diam tristique lacus, non porttitor nisi mauris non purus. Pellentesque odio est, consequat et ultrices vitae, blandit eget nisi. Aenean vitae posuere nisi. Nam a tellus a quam convallis pretium. In hac habitasse platea dictumst.
@@ -43,6 +43,7 @@ Cras in molestie ex, eget tincidunt magna. Aliquam condimentum rhoncus dui sed b
 
 Nullam ut pellentesque justo. Vestibulum ac nulla varius, ultricies erat et, gravida lacus. Curabitur nec massa dui. Fusce non porttitor arcu. Nullam rutrum ut tortor et vulputate. Maecenas nec pharetra justo, sit amet feugiat diam. Praesent pulvinar neque eu aliquet eleifend. Aliquam efficitur facilisis ex, sit amet varius nulla tincidunt ut.
       </p>
+      <IgTiles />
         <Footer />
       </div>
     );
