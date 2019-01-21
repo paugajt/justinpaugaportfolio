@@ -4,51 +4,38 @@ import React, { Component } from 'react';
 class NavBar extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            scrollingLock: false,
-            height: window.innerHeight - 900,
-        };
-
-        this.handleScroll = this.handleScroll.bind(this);
-        this.updateDimensions = this.updateDimensions.bind(this);
+        //this.handleScroll = this.handleScroll.bind(this);
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-        window.addEventListener('resize', this.updateDimensions)
-    }
+    // componentDidMount() {
+    //     window.addEventListener('scroll', this.handleScroll);
+    // }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-        window.removeEventListener('resize', this.updateDimensions)
-    }
+    // componentWillUnmount() {
+    //     window.removeEventListener('scroll', this.handleScroll);
+    // }
 
-    updateDimensions() {
-        this.setState({height: window.innerHeight - 900})
-        console.log(this.state.height)
-    }
-    handleScroll() {
-        if (window.scrollY > window.innerHeight + 900) {
-            this.setState({
-                scrollingLock: true,
-            });
+    // handleScroll() {
+    //     if (window.scrollY > window.innerHeight + 900) {
+    //         this.setState({
+    //             scrollingLock: true,
+    //         });
             
-        } 
-        else if (window.scrollY < window.innerHeight) {
-            this.setState({
-                scrollingLock: false,
-            });
-        }
-    }
+    //     } 
+    //     else if (window.scrollY < window.innerHeight) {
+    //         this.setState({
+    //             scrollingLock: false,
+    //         });
+    //     }
+    // }
     render() {
         return (
-            <div className='navbar' style={{width: '100%', position: this.state.scrollingLock ? 'fixed' : 'relative', top: this.state.scrollingLock ? '0' : this.state.height}}>
+            <div className='navbar' style={{width: '100%', position: 'fixed', top: '0'}}>
                 <ul style={ulStyle}>
                     <li style={leftLi}><a href='#home' style={linkStyle}>Home</a></li>
-                    <li style={leftLi}><a href='#projects' style={linkStyle}>Projects</a></li>
-                    <li style={leftLi}><a href='#resume' style={linkStyle}>Resume</a></li>
+                    <li style={rightLi}><a href='#resume' style={linkStyle}>Resume</a></li>
                     <li style={rightLi}><a href='#about' style={linkStyle}>About Me</a></li>
-                    <li style={rightLi}><a href='#contact' style={linkStyle}>Contact</a></li>
+                    <li style={rightLi}><a href='#projects' style={linkStyle}>Projects</a></li>
                 </ul>
             </div>
         );
@@ -60,13 +47,13 @@ const ulStyle = {
     margin: 0,
     padding: 0,
     overflow: 'hidden',
-    backgroundColor: '#111111',
+    backgroundColor: '#282c34',
     width: '100%'
   }
 
 const linkStyle = {
     display: 'block',
-    backgroundColor: '#111111',
+    backgroundColor: '#282c34',
     color: 'white',
     textAlign: 'center',
     padding: '14px 16px',

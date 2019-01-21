@@ -55,9 +55,8 @@ const mainStyle = {
     display: 'inline-grid', 
     gridTemplateColumns: '350px 350px 350px 350px 350px',
     gridTemplateRows: 'repeat(200px)', 
-    marginTop: '30px', 
-    zIndex: '0', 
-    position: 'relative'
+    position: 'relative',
+    paddingTop: '100px'
 }
 
 export default IgTiles;
