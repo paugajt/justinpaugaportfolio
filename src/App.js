@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './CSS/App.css';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
 import IgTiles from './Components/IgTiles';
+import Portfolio from './Components/Portfolio';
 
 
 class App extends Component {
@@ -13,6 +13,7 @@ class App extends Component {
       <div className="App">
       <NavBar />
       <Home />
+      <Portfolio />
       <IgTiles />
       <Footer />
       </div>

@@ -32,10 +32,10 @@ class NavBar extends Component {
         return (
             <div className='navbar' style={{width: '100%', position: 'fixed', top: '0'}}>
                 <ul style={ulStyle}>
-                    <li style={leftLi}><a href='#home' style={linkStyle}>Home</a></li>
-                    <li style={rightLi}><a href='#resume' style={linkStyle}>Resume</a></li>
-                    <li style={rightLi}><a href='#about' style={linkStyle}>About Me</a></li>
-                    <li style={rightLi}><a href='#projects' style={linkStyle}>Projects</a></li>
+                    <li style={leftLi}><a href='#home' style={linkStyle} >Home</a></li>
+                    <li style={rightLi}><a href='#resume' style={linkStyle} >Resume</a></li>
+                    <li style={rightLi}><a href='#about' style={linkStyle} >About Me</a></li>
+                    <li style={rightLi}><a href='#portfolio' style={linkStyle} >Portfolio</a></li>
                 </ul>
             </div>
         );

@@ -14,9 +14,9 @@ class Home extends Component {
                 <h2>Software Engineer</h2>
                 <span>
                 <ul style={{position: 'relative', top: '50%', left: '45%'}}>
-                    <li style={{liStyle}}><a href='https://www.linkedin.com/in/justin-pauga/'><img src={linkedin} alt='LinkedIn' /></a></li>
-                    <li style={{liStyle}}><a href='https://github.com/paugajt'><img src={github} alt='Github'/></a></li>
-                    <li style={{liStyle}}><a href='https://www.instagram.com/sh0wnuf/'><img src={instagram} alt='Instagram' /></a></li>
+                    <li style={{liStyle}}><a href='https://www.linkedin.com/in/justin-pauga/' target='_blank'><img src={linkedin} alt='LinkedIn' /></a></li>
+                    <li style={{liStyle}}><a href='https://github.com/paugajt' target='_blank'><img src={github} alt='Github'/></a></li>
+                    <li style={{liStyle}}><a href='https://www.instagram.com/sh0wnuf/' target='_blank'><img src={instagram} alt='Instagram' /></a></li>
                 </ul>
                 </span>
             </div>
