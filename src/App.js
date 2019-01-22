@@ -5,6 +5,7 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import IgTiles from './Components/IgTiles';
 import Portfolio from './Components/Portfolio';
+import SocialMedia from './Components/SocialMedia';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
       <Portfolio />
       <IgTiles />
       <Footer />
+      <SocialMedia />
       </div>
     );
   }

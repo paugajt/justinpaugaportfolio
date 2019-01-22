@@ -4,7 +4,7 @@ import Springboot from '../Components/Projects/Springboot';
 class Portfolio extends Component {
     render() {
         return (
-            <div id='portfolio' style={{paddingTop: '175px'}}>
+            <div id='portfolio' style={{paddingTop: '175px', margin: '0 10%'}}>
                 <div style={{background: '#5b6e91'}}>
                 <h1 style={headerStyle}><span style={spanStyle}>Portfolio</span></h1>
                 <Springboot />
